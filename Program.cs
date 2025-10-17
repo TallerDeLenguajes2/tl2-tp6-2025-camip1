@@ -16,12 +16,40 @@ using (SqliteConnection connection = new SqliteConnection(connectionString))
     }
     
     // Insertar datos
-    string insertQuery = "INSERT INTO Producto (descripcion, precio) VALUES ('Auriculares Philips', 45000), ('Auriculares JBL', 90000)";
-            using (SqliteCommand insertCmd = new SqliteCommand(insertQuery, connection))
+    string insertQuery1 = "INSERT INTO Producto (descripcion, precio) VALUES ('Auriculares Philips', 45000), ('Auriculares JBL', 90000)";
+            using (SqliteCommand insertCmd = new SqliteCommand(insertQuery1, connection))
             {
                 insertCmd.ExecuteNonQuery();
                 Console.WriteLine("Datos insertados en la tabla 'Producto'.");
             }
+    
+    string insertQuery2 = "INSERT INTO Presupuesto (nombre_destinatario, fecha_creacion) VALUES ('Milagros Sosa', '2025-07-15')";
+            using (SqliteCommand insertCmd = new SqliteCommand(insertQuery2, connection))
+            {
+                insertCmd.ExecuteNonQuery();
+                Console.WriteLine("Datos insertados en la tabla 'Presupuesto'.");
+            }
+
+    string insertQuery3 = "INSERT INTO PresupuestoDetalle (id_presupuesto, id_producto, cantidad) VALUES (3, 4, 3)";
+            using (SqliteCommand insertCmd = new SqliteCommand(insertQuery3, connection))
+            {
+                insertCmd.ExecuteNonQuery();
+                Console.WriteLine("Datos insertados en la tabla 'PresupuestoDetalle'.");
+            }
+    //modificar datos
+    string updateQuery = "UPDATE Presupuesto SET nombre_destinatario = 'Luis German Fernandez' WHERE id_presupuesto = 1";
+        using (SqliteCommand updateCmd = new SqliteCommand(updateQuery, connection))
+        {
+            updateCmd.ExecuteNonQuery();
+            Console.WriteLine("Datos actualizados en la tabla 'Presupuesto'.");
+        }
+
+    string deleteQuery = "DELETE FROM Presupuesto WHERE id_presupuesto = 3";
+        using (SqliteCommand deleteCmd = new SqliteCommand(deleteQuery, connection))
+        {
+            deleteCmd.ExecuteNonQuery();
+            Console.WriteLine("Dato eliminado de la tabla 'Presupuesto'.");
+        }
     // Leer datos
             string selectQuery = "SELECT * FROM Producto";
             using (SqliteCommand selectCmd = new SqliteCommand(selectQuery, connection))
