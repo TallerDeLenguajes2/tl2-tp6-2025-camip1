@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Taller\\repos\\2025\\db\\db.csproj": {}
+    "c:\\taller-de-lenguajes\\tl2-tp6-2025-camip1\\db.csproj": {}
   },
   "projects": {
-    "D:\\Taller\\repos\\2025\\db\\db.csproj": {
+    "c:\\taller-de-lenguajes\\tl2-tp6-2025-camip1\\db.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Taller\\repos\\2025\\db\\db.csproj",
+        "projectUniqueName": "c:\\taller-de-lenguajes\\tl2-tp6-2025-camip1\\db.csproj",
         "projectName": "db",
-        "projectPath": "D:\\Taller\\repos\\2025\\db\\db.csproj",
-        "packagesPath": "C:\\Users\\queco\\.nuget\\packages\\",
-        "outputPath": "D:\\Taller\\repos\\2025\\db\\obj\\",
+        "projectPath": "c:\\taller-de-lenguajes\\tl2-tp6-2025-camip1\\db.csproj",
+        "packagesPath": "C:\\Users\\dulce\\.nuget\\packages\\",
+        "outputPath": "c:\\taller-de-lenguajes\\tl2-tp6-2025-camip1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\queco\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\dulce\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -67,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
